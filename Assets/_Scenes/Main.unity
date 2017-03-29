@@ -212,6 +212,14 @@ Prefab:
       propertyPath: m_RootOrder
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 2370140, guid: 5f59b9945461344cebfcccf17cdc53f9, type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2370140, guid: 5f59b9945461344cebfcccf17cdc53f9, type: 2}
+      propertyPath: m_ReceiveShadows
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5f59b9945461344cebfcccf17cdc53f9, type: 2}
   m_IsPrefabParent: 0
@@ -242,7 +250,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 82f51a6bcbd5d4542b1639b808b2d6c6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_pictureFrame: {fileID: 0}
+  m_pictureFrame: {fileID: 1946922323481096, guid: f5175f8f298be1f43a3e3f586dab0916,
+    type: 2}
 --- !u!4 &481778958
 Transform:
   m_ObjectHideFlags: 0
@@ -344,6 +353,10 @@ Prefab:
     - target: {fileID: 484544, guid: 6433b1b4ccf6f474083daeac76842ec5, type: 2}
       propertyPath: m_RootOrder
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 11488288, guid: 6433b1b4ccf6f474083daeac76842ec5, type: 2}
+      propertyPath: m_enableOcclusion
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6433b1b4ccf6f474083daeac76842ec5, type: 2}

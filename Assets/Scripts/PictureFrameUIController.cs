@@ -34,10 +34,10 @@ public class PictureFrameUIController : MonoBehaviour {
 
 		// Place picture frame on the surface, and make it always face the camera.
 		if (Vector3.Angle(plane.normal, Vector3.up) > 60.0f) {
-			Vector3 up = plane.normal;
-			Vector3 right = Vector3.Cross(plane.normal, cam.transform.forward).normalized;
-			Vector3 forward = Vector3.Cross(right, plane.normal).normalized;
-			Instantiate(m_pictureFrame, planeCenter, Quaternion.LookRotation(forward, up));
+			Vector3 forward = plane.normal;
+			// Vector3 right = Vector3.Cross(plane.normal, cam.transform.forward).normalized;
+			// Vector3 forward = Vector3.Cross(right, plane.normal).normalized;
+			Instantiate(m_pictureFrame, planeCenter, Quaternion.LookRotation(forward, Vector3.up));
 		} else {
 			Debug.Log("surface is not steep enough for picture frame to be placed on.");
 		}
