@@ -33,7 +33,7 @@ public class PictureFrameUIController : MonoBehaviour {
 		}
 
 		// Place picture frame on the surface, and make it always face the camera.
-		if (Vector3.Angle(plane.normal, Vector3.up) > 60.0f) {
+		if (Vector3.Angle(plane.normal, Vector3.up) > 60.0f && Vector3.Angle(plane.normal, Vector3.up) < 140.0f) {
 			Vector3 forward = plane.normal;
 			// Vector3 right = Vector3.Cross(plane.normal, cam.transform.forward).normalized;
 			// Vector3 forward = Vector3.Cross(right, plane.normal).normalized;
