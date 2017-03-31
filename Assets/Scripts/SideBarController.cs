@@ -7,10 +7,15 @@ public class SideBarController : MonoBehaviour {
 
 	public Image m_selectionIndicator;
 	public Button m_selectedButton = null;
-	public GameObject m_frameObject;
-//	public GameObject m_cubeObject;
-//	public GameObject m_chairObject;
-//	public bool passTheBallObject;
+	public GameObject m_frameObject1;
+	public GameObject m_frameObject2;
+	public GameObject m_frameObject3;
+	public GameObject m_frameObject4;
+	public GameObject m_frameObject5;
+	public GameObject m_frameObject6;
+	//	public GameObject m_cubeObject;
+	//	public GameObject m_chairObject;
+	//	public bool passTheBallObject;
 
 	public void SelectObject (Button selectedButton) {
 		m_selectedButton = selectedButton;
@@ -23,12 +28,18 @@ public class SideBarController : MonoBehaviour {
 //		pictureFrameUIController.Reset ();
 
 		Debug.Log("Button Name: "+selectedButton.name);
-		if (selectedButton.name == "Button (5)") {
-			pictureFrameUIController.m_pictureFrame = m_frameObject;
-		}else if (selectedButton.name == "Button (4)") {
-			pictureFrameUIController.m_pictureFrame = m_frameObject;
+		if (selectedButton.name == "Button1") {
+			pictureFrameUIController.m_pictureFrame = m_frameObject1;
+		} else if (selectedButton.name == "Button2") {
+			pictureFrameUIController.m_pictureFrame = m_frameObject2;
+		} else if (selectedButton.name == "Button3") {
+			pictureFrameUIController.m_pictureFrame = m_frameObject3;
+		} else if (selectedButton.name == "Button4") {
+			pictureFrameUIController.m_pictureFrame = m_frameObject4;
+		} else if (selectedButton.name == "Button5") {
+			pictureFrameUIController.m_pictureFrame = m_frameObject5;
 		} else {
-			pictureFrameUIController.m_pictureFrame = m_frameObject;
+			pictureFrameUIController.m_pictureFrame = m_frameObject6;
 		}
 	}
 
